@@ -6,13 +6,13 @@
 /*   By: livsauze <livsauze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/27 16:20:39 by livsauze          #+#    #+#             */
-/*   Updated: 2024/02/14 19:08:11 by livsauze         ###   ########.fr       */
+/*   Updated: 2024/02/15 13:11:00 by livsauze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "include/minitalk.h"
 
-static int g_bit;
+static int	g_bit;
 
 void	ft_send_strlen(char *str, pid_t pid)
 {
@@ -55,6 +55,7 @@ void	ft_send_char(char c, pid_t pid)
 			usleep(100);
 	}
 }
+
 void	ft_send_string(char *str, pid_t pid)
 {
 	int	i;
@@ -69,7 +70,7 @@ void	ft_send_string(char *str, pid_t pid)
 }
 
 void	ft_handler(int sig)
-{   
+{
 	if (sig == SIGUSR1)
 		g_bit = 1;
 	else if (sig == SIGUSR2)

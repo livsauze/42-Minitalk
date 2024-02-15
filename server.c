@@ -6,7 +6,7 @@
 /*   By: livsauze <livsauze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/28 17:44:12 by livsauze          #+#    #+#             */
-/*   Updated: 2024/02/14 19:04:00 by livsauze         ###   ########.fr       */
+/*   Updated: 2024/02/15 13:12:06 by livsauze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,11 +49,11 @@ void	ft_malloc_str(char **str, int len, int bit_num)
 
 void	ft_handler(int signum, siginfo_t *sinfo, void *context)
 {
-	static char *str;
-	static char c;
+	static char	*str;
+	static char	c;
 	static int	bit_num = -1;
-	static int len = 0;
-	static int i = 0;
+	static int	len = 0;
+	static int	i = 0;
 
 	(void) context;
 	ft_handle_bit(sinfo, &bit_num);

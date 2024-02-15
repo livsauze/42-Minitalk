@@ -6,11 +6,11 @@
 /*   By: livsauze <livsauze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/14 19:00:57 by livsauze          #+#    #+#             */
-/*   Updated: 2024/02/14 19:02:11 by livsauze         ###   ########.fr       */
+/*   Updated: 2024/02/15 13:13:28 by livsauze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "../include/minitalk.h"
+#include "../include/minitalk.h"
 
 void	ft_error(char *str)
 {

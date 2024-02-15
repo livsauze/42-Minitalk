@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   utils.c                                            :+:      :+:    :+:   */
+/*   utils_server.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: livsauze <livsauze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/01 14:17:42 by livsauze          #+#    #+#             */
-/*   Updated: 2024/02/14 19:02:08 by livsauze         ###   ########.fr       */
+/*   Updated: 2024/02/15 13:13:19 by livsauze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "../include/minitalk.h"
+#include "../include/minitalk.h"
 
 void	init_sig(int sig, void (*handler)(int, siginfo_t *, void *))
 {
