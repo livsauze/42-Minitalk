@@ -6,7 +6,7 @@
 /*   By: livsauze <livsauze@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/27 16:20:39 by livsauze          #+#    #+#             */
-/*   Updated: 2024/02/15 13:11:00 by livsauze         ###   ########.fr       */
+/*   Updated: 2024/02/17 16:31:35 by livsauze         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ void	ft_send_strlen(char *str, pid_t pid)
 	while (bit_num >= 0)
 	{
 		if (kill(pid, 0) < 0)
-			ft_printf("Can't send sig to pid server");
+			ft_error("Can't send sig to pid server");
 		g_bit = 0;
 		if (len & (1 << bit_num))
 			kill(pid, SIGUSR1);
